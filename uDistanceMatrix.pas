@@ -1,0 +1,26 @@
+unit uDistanceMatrix;
+
+interface
+
+uses
+  uDistanceMatrixRow;
+
+type
+  TDistanceMatrix = class
+    protected
+     Fstatus: string;
+     FerrorMessage: string;
+     Forigin_addresses: TArray<string>;
+     Fdestination_addresses: Tarray<string>;
+     Frows: TArray<TDistanceMatrixRow>;
+    public
+      property status: string read Fstatus write Fstatus;
+      property errorMessage: string read FerrorMessage write FerrorMessage;
+      property origin_addresses: TArray<string> read Forigin_addresses write Forigin_addresses;
+      property destination_addresses: Tarray<string> read Fdestination_addresses write Fdestination_addresses;
+      property rows: TArray<TDistanceMatrixRow> read Frows write Frows;
+  end;
+
+implementation
+
+end.

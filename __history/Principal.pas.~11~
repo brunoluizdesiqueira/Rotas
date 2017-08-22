@@ -1,0 +1,76 @@
+unit Principal;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls,
+  Rest.Json,
+  REST.Client,
+  Web.HTTPApp,
+  REST.Types,
+  System.JSON,
+  IPPeerClient,
+  Data.Bind.Components,
+  Data.Bind.ObjectScope,
+  uDistanceMatrix
+  ;
+
+type
+  TForm1 = class(TForm)
+    Button1: TButton;
+    RESTClient1: TRESTClient;
+    RESTRequest1: TRESTRequest;
+    RESTResponse1: TRESTResponse;
+    edtOrigem: TEdit;
+    edtDestino: TEdit;
+    lbldistancia: TLabel;
+    lbltempo: TLabel;
+    lblValor: TLabel;
+    procedure Button1Click(Sender: TObject);
+  private
+    { Private declarations }
+    FDistanceMatrix: TDistanceMatrix;
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+
+const
+  API = 'https://maps.googleapis.com/maps/api/distancematrix';
+  KEY = 'AIzaSyBPBXe9Z7DIhV1747sFrPXs7zhUkKHt6A8';
+  PARAMETOS = 'json?units=imperial&origins={origem}&destinations={destino}&key=' + KEY;
+
+implementation
+
+{$R *.dfm}
+
+uses EDistanceMatrixElementStatus,  uDistanceMatrixElement,
+  uDistanceMatrixRow;
+
+procedure TForm1.Button1Click(Sender: TObject);
+var
+  lDistanceMatrix: TDistanceMatrix;
+  lJSONObject: TJSONObject;
+  lValor: Double;
+begin
+  RESTRequest1.Resource := PARAMETOS;
+  RESTRequest1.Params.AddUrlSegment('origem', edtOrigem.Text);
+  RESTRequest1.Params.AddUrlSegment('destino', edtDestino.Text);
+  RESTRequest1.Execute;
+
+  lJSONObject := RESTRequest1.Response.JSONValue as TJSONObject;
+  lDistanceMatrix := TJson.JSONToObject<TDistanceMatrix>(lJSONObject);
+
+  lbldistancia.Caption := 'Distância: ' + lDistanceMatrix.rows[0].elements[0].distance.Text;
+  lbltempo.Caption := 'Tempo: ' + lDistanceMatrix.rows[0].elements[0].duration.Text;
+
+  lValor := (lDistanceMatrix.rows[0].elements[0].distance.Value * 0.01) +
+            (lDistanceMatrix.rows[0].elements[0].duration.Value * 0.0001);
+
+  lblvalor.Caption := 'R$ ' + FormatFloat('#,##0.00', lValor);
+end;
+
+end.

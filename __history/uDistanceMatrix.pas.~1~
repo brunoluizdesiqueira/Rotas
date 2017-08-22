@@ -1,0 +1,18 @@
+unit uDistanceMatrix;
+
+interface
+
+type
+  TDistanceMatrix = class
+    public
+     status: string;
+     errorMessage: string;
+     originAddresses: array of string;
+     destinationAddresses: array of string;
+     rows: array of DistanceMatrixRow;
+
+  end;
+
+implementation
+
+end.

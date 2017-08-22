@@ -1,0 +1,12 @@
+unit uDistanceMatrixElement;
+
+interface
+
+type
+  TDistanceMatrixElement = class
+
+  end;
+
+implementation
+
+end.

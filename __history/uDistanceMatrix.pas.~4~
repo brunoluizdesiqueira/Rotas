@@ -1,0 +1,27 @@
+unit uDistanceMatrix;
+
+interface
+
+uses
+  uDistanceMatrixRow;
+
+type
+  TDistanceMatrix = class
+    public
+     status: string;
+     errorMessage: string;
+     origin_addresses: TArray<string>;
+     destination_addresses: Tarray<string>;
+     rows : TArray<TDistanceMatrixRow>;
+  end;
+
+implementation
+
+{
+
+'{"destination_addresses":["São Paulo, State of São Paulo, Brazil"],
+"origin_addresses":["Rio de Janeiro, State of Rio de Janeiro, Brazil"],"rows":[{"elements":[{"distance":{"text":"269 mi","value":432969},"duration":{"text":"5 hours 22 mins","value":19302},"status":"OK"}]}],"status":"OK"}'
+}
+
+
+end.

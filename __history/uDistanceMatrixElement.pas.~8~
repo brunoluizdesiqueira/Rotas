@@ -1,0 +1,25 @@
+unit uDistanceMatrixElement;
+
+interface
+uses
+  EDistanceMatrixElementStatus;
+
+type
+  TDistanceMatrixElement = class
+  protected
+    Fstatus: string;
+    Fduration: integer;
+    FdurationInTraffic: integer;
+    Fdistance: integer;
+    Ffare: currency;
+  public
+    property status: string read Fstatus write Fstatus;
+    property duration: integer read Fduration write Fduration;
+    property durationInTraffic: integer read FdurationInTraffic write FdurationInTraffic;
+    property distance: integer read Fdistance write Fdistance;
+    property fare: currency read Ffare write Ffare;
+  end;
+
+implementation
+
+end.

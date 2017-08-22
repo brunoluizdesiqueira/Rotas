@@ -1,0 +1,16 @@
+unit uDistanceMatrixRow;
+
+interface
+
+uses
+ uDistanceMatrixElement;
+
+type
+  TDistanceMatrixRow = class
+  public
+    elements: array of TDistanceMatrixElement;
+  end;
+
+implementation
+
+end.

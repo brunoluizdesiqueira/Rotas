@@ -1,0 +1,17 @@
+unit uDistanceMatrixElement;
+
+interface
+
+type
+  TDistanceMatrixElement = class
+  public
+    status: DistanceMatrixElementStatus;
+    duration: Duration;
+    durationInTraffic: Duration;
+    distance: Distance;
+    fare: Fare;
+  end;
+
+implementation
+
+end.

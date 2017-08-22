@@ -1,0 +1,12 @@
+unit uDistanceMatrixRow;
+
+interface
+
+type
+  TDistanceMatrixRow = class
+
+  end;
+
+implementation
+
+end.

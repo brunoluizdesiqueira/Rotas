@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2017/07/26 08:38:48.000.495,=C:\Users\bruno.dsn.erp\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2017/08/21 09:22:36.000.224,=C:\Users\bruno.dsn.erp\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2017/08/21 09:23:01.000.088,=C:\Users\bruno.dsn.erp\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2017/08/21 09:23:18.000.418,=C:\Users\bruno.dsn.erp\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2017/08/21 10:28:50.000.785,=C:\Users\bruno.dsn.erp\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2017/08/21 10:35:10.000.310,C:\Users\bruno.dsn.erp\Documents\Embarcadero\Studio\Projects\Unit2.pas=C:\Users\bruno.dsn.erp\Documents\Embarcadero\Studio\Projects\Rotas\uDistanceMatrix.pas</Transaction>
+    <Transaction>2017/08/21 10:35:23.000.697,C:\Users\bruno.dsn.erp\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\bruno.dsn.erp\Documents\Embarcadero\Studio\Projects\Rotas\Principal.pas</Transaction>
+    <Transaction>2017/08/21 10:35:23.000.697,C:\Users\bruno.dsn.erp\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\Users\bruno.dsn.erp\Documents\Embarcadero\Studio\Projects\Rotas\Principal.dfm</Transaction>
+    <Transaction>2017/08/21 10:35:29.000.609,C:\Users\bruno.dsn.erp\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\bruno.dsn.erp\Documents\Embarcadero\Studio\Projects\Rotas\Rotas.dproj</Transaction>
+    <Transaction>2017/08/21 10:35:36.000.377,=C:\Users\bruno.dsn.erp\Documents\Embarcadero\Studio\Projects\Rotas\Unit1.pas</Transaction>
+    <Transaction>2017/08/21 10:35:51.000.413,C:\Users\bruno.dsn.erp\Documents\Embarcadero\Studio\Projects\Rotas\Unit1.pas=C:\Users\bruno.dsn.erp\Documents\Embarcadero\Studio\Projects\Rotas\uDistanceMatrixRow.pas</Transaction>
+    <Transaction>2017/08/21 10:44:39.000.196,=C:\Users\bruno.dsn.erp\Documents\Embarcadero\Studio\Projects\Rotas\Unit1.pas</Transaction>
+    <Transaction>2017/08/21 10:45:54.000.285,=C:\Users\bruno.dsn.erp\Documents\Embarcadero\Studio\Projects\Rotas\Unit2.pas</Transaction>
+    <Transaction>2017/08/21 10:46:03.000.441,C:\Users\bruno.dsn.erp\Documents\Embarcadero\Studio\Projects\Rotas\Unit2.pas=C:\Users\bruno.dsn.erp\Documents\Embarcadero\Studio\Projects\Rotas\uDistanceMatrixElement.pas</Transaction>
+    <Transaction>2017/08/21 10:53:51.000.370,=C:\Users\bruno.dsn.erp\Documents\Embarcadero\Studio\Projects\Rotas\Unit2.pas</Transaction>
+    <Transaction>2017/08/21 10:54:12.000.743,C:\Users\bruno.dsn.erp\Documents\Embarcadero\Studio\Projects\Rotas\Unit2.pas=C:\Users\bruno.dsn.erp\Documents\Embarcadero\Studio\Projects\Rotas\EDistanceMatrixElementStatus.pas</Transaction>
+    <Transaction>2017/08/22 13:42:28.601,=C:\Users\bruno.dsn.erp\Documents\Embarcadero\Studio\Projects\Rotas\Unit1.pas</Transaction>
+    <Transaction>2017/08/22 13:42:48.533,C:\Users\bruno.dsn.erp\Documents\Embarcadero\Studio\Projects\Rotas\uDistance.pas=C:\Users\bruno.dsn.erp\Documents\Embarcadero\Studio\Projects\Rotas\Unit1.pas</Transaction>
+  </Transactions>
+</BorlandProject>
